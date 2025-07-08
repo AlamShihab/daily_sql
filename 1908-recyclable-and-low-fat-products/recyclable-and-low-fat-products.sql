@@ -1,4 +1,5 @@
-# Write your MySQL query statement below
-select product_id 
+
+select 
+    product_id 
 from Products
-Where low_fats = "Y" and recyclable = "Y"
+where concat(low_fats, recyclable) = 'YY'
