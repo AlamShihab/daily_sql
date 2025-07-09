@@ -1,19 +1,10 @@
 /*
+# Method 1:
 SELECT name
 FROM   customer
 WHERE  referee_id <> 2
         OR referee_id IS NULL;
 
-*/
-
-/*
-# Method 1:
-SELECT name
-FROM Customer
-WHERE referee_id != 2
-  OR referee_id IS NULL;
-
-*/
 
 # Method 2:
 SELECT name
@@ -23,3 +14,15 @@ WHERE NOT EXISTS (
   FROM Customer c2
   WHERE referee_id = 2
     AND c2.id = c1.id);
+
+
+*/
+
+
+# Method 1:
+SELECT name
+FROM Customer
+WHERE referee_id != 2
+  OR referee_id IS NULL;
+
+
