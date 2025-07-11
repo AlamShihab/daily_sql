@@ -3,4 +3,6 @@ select
     EmployeeUNI.unique_id
 from Employees 
 left join EmployeeUNI
-    using(id);
+on Employees.id =EmployeeUNI.id;
+
+--    using(id); (64.66%)
