@@ -6,4 +6,4 @@ from
     Sales
 inner join 
     Product
-where Sales.product_id = Product.product_id;
+using(product_id);
