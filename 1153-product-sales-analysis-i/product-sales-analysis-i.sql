@@ -1,4 +1,9 @@
-Select Product.product_name, Sales.year, Sales.price
-from Sales
-inner join Product
+Select 
+    Product.product_name, 
+    Sales.year, 
+    Sales.price
+from 
+    Sales
+inner join 
+    Product
 where Sales.product_id = Product.product_id;
